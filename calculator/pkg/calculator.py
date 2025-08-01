@@ -1,5 +1,3 @@
-# calculator.py
-
 class Calculator:
     def __init__(self):
         self.operators = {
@@ -33,7 +31,7 @@ class Calculator:
                     and self.precedence[operators[-1]] >= self.precedence[token]
                 ):
                     self._apply_operator(operators, values)
-                operators.append(token)
+                operators.append(token) 
             else:
                 try:
                     values.append(float(token))
